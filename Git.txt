@@ -1,0 +1,56 @@
+GIT
+---
+Es un sistema de control de versiones.
+
+En Git contamos con tres estado
+1) working directory
+    donde estas tranajando con los archivos
+2) staging area
+    agegar los archivos para prepararlos para el guardado
+3) repository
+    ya cuando esta listo todo
+
+
+git init        = indica que es un proyecto para usar git
+git add <file>  = pasa los archivos del estado 1 al estado 2
+git status      = para ver el estado de los archivos
+git commit      = para pasarlo del estado 2 al 3
+git push        = para subirlo al repositorio remoto
+git pull        = para bajar los cambios
+git clone       = lo bajas del remoto al local
+
+
+GIT INIT
+---------
+juliorhode@Osiris:~/Escritorio/Git$ git init                      Inicializado repositorio Git vacío en /home/juliorhode/Escritorio/Git/.git/
+
+GIT STATUS 
+-----------
+juliorhode@Osiris:~/Escritorio/Git$ git status                            En la rama master
+
+No hay commits todavía
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+        Git.txt
+        app.js
+        index.html
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+
+GIT ADD 
+--------
+juliorhode@Osiris:~/Escritorio/Git$ git add app.js 
+juliorhode@Osiris:~/Escritorio/Git$ git add index.html 
+
+GIT STATUS 
+----------
+juliorhode@Osiris:~/Escritorio/Git$ git status
+En la rama master
+
+No hay commits todavía
+
+Cambios a ser confirmados:
+  (usa "git rm --cached <archivo>..." para sacar del área de stage)
+        nuevo archivo:  app.js
+        nuevo archivo:  index.html
